@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TODO App</title>
+    <style>
+          body {
+  max-width: 500px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  background-color:black;
+}
+
+input {
+  margin-top: 30px;
+  padding: 25px;
+  width: 400px;
+  height: 30px;
+  font-size: 32px;
+  text-shadow:2px 2px 2px darkslategray;
+  box-shadow: 2px 2px 2px black;
+  background: 
+    repeating-radial-gradient(
+      circle at 0 0, 
+      #eee,
+      #ccc 50px
+    );
+}
+input:hover{
+  border:2px groove rgb(104, 61, 139);
+}
+li {
+  font-size: 30px;
+  color:white;
+}
+li:hover {
+  text-decoration: line-through;
+}
+#app{
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(146, 9, 32);
+  color:silver
+}
+
+    </style>
+  </head>
+  <body>
+    <h1 id="app">My To Do List</h1>
+    <input type="text" id="input" placeholder="TODO Item..." />
+    <ul id="list"></ul>
+
+    <script src="./domify.js"></script>
+  </body>
+</html>
